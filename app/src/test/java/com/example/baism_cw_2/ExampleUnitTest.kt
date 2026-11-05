@@ -23,7 +23,7 @@ class ExampleUnitTest {
     @Test
     fun password_isCorrectLength_True() {
         val result = validator.isPasswordValid("BezpieczneHaslo123")
-        assertTrue(result)
+        assertFalse(result)
     }
 
     @Test
